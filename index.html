@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selva Kumar R | AI & Data Science Student Portfolio</title>
+    <meta name="description" content="Official portfolio of Selva Kumar R, B.Tech AI & Data Science student at Hindustan University. Showcasing algorithmic experiments, skill constellations, and learning milestones in a luxury dark editorial design.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor-dot" id="cursor-dot"></div>
+    <div class="custom-cursor-ring" id="cursor-ring"></div>
+
+    <!-- Ambient Glowing Background Aura -->
+    <div class="glow-aura" id="glow-aura"></div>
+
+    <!-- Cinematic Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-content text-center">
+            <div class="preloader-text-header">
+                INITIALIZING / SELVA KUMAR R
+            </div>
+            <div class="preloader-loading-bar-wrapper">
+                <div class="preloader-loading-bar" id="preloader-loading-bar"></div>
+            </div>
+            <div class="preloader-percentage-text" id="preloader-percentage-text">0%</div>
+        </div>
+        <div class="preloader-curtain" id="preloader-curtain"></div>
+    </div>
+
+    <!-- Sticky Floating Navigation Menu -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                SELVA KUMAR R<span class="dot-accent">.</span>
+            </a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation Menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#learning" class="nav-link">Learning</a></li>
+                    <li><a href="#lab" class="nav-link">Lab</a></li>
+                    <li><a href="#journey" class="nav-link">Journey</a></li>
+                    <li><a href="#certifications" class="nav-link">Certificates</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <canvas id="neural-canvas"></canvas>
+            <div class="hero-content text-center">
+                <div class="scroll-reveal-init">
+                    <div class="hero-badge">AI & DATA SCIENCE STUDENT</div>
+                </div>
+                <h1 class="hero-title scroll-reveal-init" id="hero-title-name">
+                    SELVA KUMAR R<span class="dot-accent">.</span>
+                </h1>
+                <p class="hero-subtitle scroll-reveal-init">
+                    AI & DATA SCIENCE STUDENT
+                </p>
+                <p class="hero-institution scroll-reveal-init">
+                    HINDUSTAN UNIVERSITY
+                </p>
+                <p class="hero-desc scroll-reveal-init">
+                    Exploring data, intelligence, and computational systems.
+                </p>
+                <div class="hero-explore scroll-reveal-init">
+                    <a href="#about" class="explore-btn">
+                        Explore <span class="arrow-down">↓</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetrical Split-Screen Sections Wrapper -->
+        <div class="editorial-layout">            <!-- Section 01: About + Education -->
+            <section id="about" class="editorial-section about-section-portrait">
+                <!-- Left Sticky Side — Large Cinematic Portrait -->
+                <div class="section-left about-portrait-left">
+                    <div class="sticky-block">
+                        <!-- Cinematic Portrait Block -->
+                        <div class="portrait-cinematic" id="portrait-tilt">
+                            <div class="portrait-inner" id="portrait-inner">
+                                <img src="assets/selva_photo.jpg"
+                                     alt="Selva Kumar R — AI & Data Science Student"
+                                     class="portrait-img" id="portrait-img">
+                                <!-- Scan-line shimmer layer -->
+                                <div class="portrait-scanline"></div>
+                                <!-- Gradient vignette overlay -->
+                                <div class="portrait-vignette"></div>
+                                <!-- Bottom name strip -->
+                                <div class="portrait-nameplate">
+                                    <span class="portrait-name">SELVA KUMAR R.</span>
+                                    <span class="portrait-role">AI &amp; Data Science</span>
+                                </div>
+                            </div>
+                            <!-- Decorative corner accents -->
+                            <div class="corner-tl"></div>
+                            <div class="corner-br"></div>
+                            <!-- Glow ring -->
+                            <div class="portrait-glow-ring"></div>
+                        </div>
+
+                        <span class="section-number" style="margin-top:28px; display:block;">01 /</span>
+                        <h2 class="section-title">ABOUT &amp; EDUCATION</h2>
+                        <p class="section-brief">Biography, academic qualifications, and current focus areas.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="bio-container reveal-fade-up">
+                        <p class="paragraph-lead">I am an undergraduate student studying for a Bachelor of Technology in Artificial Intelligence &amp; Data Science at Hindustan University.</p>
+                        <p class="paragraph-body">My studies cover data processing, logical models, and the math supporting artificial intelligence structures. I enjoy programming, analyzing data distributions, and writing clean scripts to solve logical problems.</p>
+                    </div>
+
+                    <!-- Hindustan University Card -->
+                    <div class="card glass-card reveal-fade-up">
+                        <div class="card-header">
+                            <span class="card-tag">EDUCATION</span>
+                            <h3>Hindustan University</h3>
+                            <p class="card-subtitle">B.Tech in Artificial Intelligence &amp; Data Science</p>
+                            <p class="card-duration">2024 — 2028 (Expected)</p>
+                        </div>
+                        <div class="card-body">
+                            <p>Focusing on computer science fundamentals, object-oriented concepts, relational databases, data structures, and mathematical algorithms for data classification.</p>
+                        </div>
+                    </div>
+
+                    <!-- Currently Status Block -->
+                    <div class="card glass-card currently-card reveal-fade-up">
+                        <h4 class="card-subtitle-small"><i class="fa-solid fa-bolt icon-accent"></i> CURRENTLY</h4>
+                        <ul class="currently-list">
+                            <li><span class="bullet">▪</span> Pursuing B.Tech AI &amp; Data Science</li>
+                            <li><span class="bullet">▪</span> Improving Python &amp; problem solving</li>
+                            <li><span class="bullet">▪</span> Exploring Data Science &amp; ML</li>
+                            <li><span class="bullet">▪</span> Building my programming foundation</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 02: Skills -->
+            <section id="skills" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">02 /</span>
+                        <h2 class="section-title">TECHNICAL SKILLS</h2>
+                        <p class="section-brief">Current programming languages, databases, and core concepts.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="skills-intro-text reveal-fade-up">
+                        <p class="paragraph-body">An interactive overview of my technical toolset. Hover over the nodes in the skill constellation below to show details and tool descriptions.</p>
+                    </div>
+
+                    <!-- Constellation Canvas Container -->
+                    <div class="constellation-wrapper reveal-fade-up">
+                        <div class="canvas-container">
+                            <canvas id="skills-canvas"></canvas>
+                        </div>
+                        <div class="skill-detail-panel glass-card" id="skill-detail-panel">
+                            <h4 id="skill-name" class="text-accent">Select a Node</h4>
+                            <p id="skill-desc">Hover over any node in the constellation on the left to review descriptions, proficiencies, and libraries.</p>
+                            <div class="skill-meta-tags" id="skill-tags">
+                                <!-- Tags dynamically generated -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 03: Currently Learning -->
+            <section id="learning" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">03 /</span>
+                        <h2 class="section-title">CURRENTLY LEARNING</h2>
+                        <p class="section-brief">Core subjects and domains being explored in my academic timeline.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="learning-list">
+                        
+                        <!-- Item 1 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">01.</div>
+                            <div class="learning-content">
+                                <h3>Python Programming</h3>
+                                <p>Improving my dynamic programming capabilities, object-oriented concepts, and computational logic scripting in Python.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">02.</div>
+                            <div class="learning-content">
+                                <h3>Data Structures</h3>
+                                <p>Studying lists, stacks, queues, trees, and basic memory sorting methods to write efficient coding algorithms.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">03.</div>
+                            <div class="learning-content">
+                                <h3>SQL & Databases</h3>
+                                <p>Exploring relational database architecture, tables schema queries, indexing, and data retrieval methods.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 4 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">04.</div>
+                            <div class="learning-content">
+                                <h3>Machine Learning Fundamentals</h3>
+                                <p>Learning parameters tuning, regressions, linear models, and simple classifications using Scikit-Learn libraries.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 5 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">05.</div>
+                            <div class="learning-content">
+                                <h3>Data Analysis & Visualization</h3>
+                                <p>Parsing numerical logs and columns, cleaning data points, and mapping indicators with Pandas and Matplotlib.</p>
+                            </div>
+                        </div>
+
+                        <!-- Item 6 -->
+                        <div class="learning-row reveal-fade-up">
+                            <div class="learning-num">06.</div>
+                            <div class="learning-content">
+                                <h3>Artificial Intelligence</h3>
+                                <p>Exploring search algorithms, state spaces representations, logic systems, and theoretical neural networks concepts.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 04: Experimental Lab -->
+            <section id="lab" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">04 /</span>
+                        <h2 class="section-title">EXPERIMENTAL LAB</h2>
+                        <p class="section-brief">Algorithmic experiments exploring motion, mathematics, systems and computational behavior.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="lab-cards-list">
+                        
+                        <!-- Lab Card 1: Boids -->
+                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-boids">
+                            <div class="lab-canvas-container">
+                                <canvas id="boids-canvas"></canvas>
+                                <div class="canvas-hud">
+                                    <span class="hud-status standby" id="hud-status-boids">STANDBY</span>
+                                    <span class="hud-coordinates">SYS_REF: COLLECTIVE_MOTION</span>
+                                </div>
+                            </div>
+                            <div class="lab-card-details">
+                                <div class="lab-card-num-header">
+                                    <span class="lab-num">01 / COLLECTIVE MOTION</span>
+                                    <h3 class="lab-title">Boids Swarm</h3>
+                                </div>
+                                <p class="paragraph-body-small">Simulating flocking mechanics with alignment, separation, and cohesion vectors. Hover to attract and direct the swarm.</p>
+                            </div>
+                        </div>
+
+                        <!-- Lab Card 2: Chaos Pendulum -->
+                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-pendulum">
+                            <div class="lab-canvas-container">
+                                <canvas id="pendulum-canvas"></canvas>
+                                <div class="canvas-hud">
+                                    <span class="hud-status standby" id="hud-status-pendulum">STANDBY</span>
+                                    <span class="hud-coordinates">SYS_REF: CHAOTIC_SYSTEMS</span>
+                                </div>
+                            </div>
+                            <div class="lab-card-details">
+                                <div class="lab-card-num-header">
+                                    <span class="lab-num">02 / CHAOTIC SYSTEMS</span>
+                                    <h3 class="lab-title">Double Pendulum</h3>
+                                </div>
+                                <p class="paragraph-body-small">Euler physics tracking chaotic trajectories. Extremely sensitive to start angles, tracing non-repetitive vector loops. Click and drag to release.</p>
+                            </div>
+                        </div>
+
+                        <!-- Lab Card 3: Flow Field -->
+                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-flow">
+                            <div class="lab-canvas-container">
+                                <canvas id="flow-canvas"></canvas>
+                                <div class="canvas-hud">
+                                    <span class="hud-status standby" id="hud-status-flow">STANDBY</span>
+                                    <span class="hud-coordinates">SYS_REF: VECTOR_DYNAMICS</span>
+                                </div>
+                            </div>
+                            <div class="lab-card-details">
+                                <div class="lab-card-num-header">
+                                    <span class="lab-num">03 / VECTOR DYNAMICS</span>
+                                    <h3 class="lab-title">Flow Field</h3>
+                                </div>
+                                <p class="paragraph-body-small">Drifting particles painting mathematical curves guided by a wave vector grid. Click the canvas to randomize the force vectors.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 05: Journey -->
+            <section id="journey" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">05 /</span>
+                        <h2 class="section-title">JOURNEY</h2>
+                        <p class="section-brief">Chronological track of academic workshops, trainings, and achievements.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="journey-timeline">
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-row reveal-fade-up" id="timeline-start-node">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot" id="timeline-trigger-dot"></div>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 class="timeline-title">Data Science Internship</h3>
+                                <p class="timeline-org">Cognifyz Technologies</p>
+                                <p class="timeline-desc">Completed hands-on data science projects, focused on extracting insights, modeling, and data manipulation using modern tech stacks.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-row reveal-fade-up">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 class="timeline-title">Python Training cum Internship</h3>
+                                <p class="timeline-org">UniConverge Technologies Pvt. Ltd.</p>
+                                <p class="timeline-desc">Gained practical programming experience developing and debugging Python applications in an industry-focused training program.</p>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 3 -->
+                        <div class="timeline-row reveal-fade-up">
+                            <div class="timeline-marker">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-body">
+                                <h3 class="timeline-title">B.Tech AI & Data Science</h3>
+                                <p class="timeline-org">Hindustan University</p>
+                                <p class="timeline-desc">Began my academic engineering career, establishing fundamentals in mathematics, logic, and artificial intelligence programming concepts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 06: Certifications -->
+            <section id="certifications" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">06 /</span>
+                        <h2 class="section-title">CERTIFICATIONS</h2>
+                        <p class="section-brief">Verified courses and educational credentials earned during B.Tech studies.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="certs-list">
+                        <!-- Cert Row 1 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">GOOGLE CLOUD</span>
+                                    <h3 class="cert-name">Develop Your Google Cloud Network</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                        <!-- Cert Row 2 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">GOOGLE CLOUD</span>
+                                    <h3 class="cert-name">Implement Load Balancing on Compute Engine</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                        <!-- Cert Row 3 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">GOOGLE CLOUD</span>
+                                    <h3 class="cert-name">Build Infrastructure with Terraform</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                        <!-- Cert Row 4 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">GOOGLE CLOUD</span>
+                                    <h3 class="cert-name">Set Up an App Dev Environment</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                        <!-- Cert Row 5 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">IBM SKILLSBUILD</span>
+                                    <h3 class="cert-name">Data Fundamentals</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                        <!-- Cert Row 6 -->
+                        <div class="cert-row reveal-fade-up">
+                            <div class="cert-mask">
+                                <div class="cert-name-wrapper">
+                                    <span class="cert-issuer">FORAGE / BCG</span>
+                                    <h3 class="cert-name">GenAI Job Simulation</h3>
+                                </div>
+                            </div>
+                            <div class="cert-divider-glow"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section 07: Contact -->
+            <section id="contact" class="editorial-section">
+                <!-- Left Sticky Side -->
+                <div class="section-left">
+                    <div class="sticky-block">
+                        <span class="section-number">07 /</span>
+                        <h2 class="section-title">CONTACT</h2>
+                        <p class="section-brief">Open channels for inquiries, collaborations, and academic networks.</p>
+                        <div class="divider-line animate-width"></div>
+                    </div>
+                </div>
+                
+                <!-- Right Scrollable Side -->
+                <div class="section-right">
+                    <div class="contact-header-mask">
+                        <h2 class="contact-reveal-word">LET'S</h2>
+                        <h2 class="contact-reveal-word text-accent">CONNECT.</h2>
+                    </div>
+
+                    <div class="contact-grid">
+                        <!-- Left Sub-Col: Form -->
+                        <form id="contact-form" class="contact-form reveal-fade-up"
+                              action="https://formspree.io/f/xzepkdrb"
+                              method="POST">
+
+                            <!-- Formspree honeypot spam filter -->
+                            <input type="text" name="_gotcha" style="display:none">
+                            <!-- Custom email subject -->
+                            <input type="hidden" name="_subject" value="New message from portfolio — Selva Kumar R">
+
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" required placeholder=" " class="form-input">
+                                <label for="name" class="form-label">Full Name</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" required placeholder=" " class="form-input">
+                                <label for="email" class="form-label">Email Address</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <textarea id="message" name="message" required rows="5" placeholder=" " class="form-input"></textarea>
+                                <label for="message" class="form-label">Message Content</label>
+                                <span class="input-focus-line"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span id="submit-btn-text">Send Signal</span>
+                            </button>
+                            
+                            <div class="form-status" id="form-status"></div>
+                        </form>
+
+                        <!-- Right Sub-Col: Info -->
+                        <div class="contact-info reveal-fade-up">
+                            <ul class="contact-methods">
+                                <li>
+                                    <span>EMAIL COORDINATE</span>
+                                    <a href="mailto:16selvakumar@gmail.com" class="contact-anchor">16selvakumar@gmail.com</a>
+                                </li>
+                                <li>
+                                    <span>INSTITUTION LOCATION</span>
+                                    <p>Chennai, India</p>
+                                </li>
+                            </ul>
+
+                            <div class="social-links-wrapper">
+                                <span>NETWORKS</span>
+                                <div class="social-links">
+                                    <a href="https://www.linkedin.com/in/selvakumar016" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-link">LinkedIn ↗</a>
+                                    <a href="https://github.com/SelvaKumar016" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-link">GitHub ↗</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content text-center">
+            <p class="copyright">&copy; 2026 Selva Kumar R. All rights reserved.</p>
+            <p class="credits">AI & Data Science Student at Hindustan University. Designed with Cormorant Garamond.</p>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="script.js?v=2"></script>
+</body>
+</html>
