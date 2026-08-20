@@ -204,13 +204,14 @@ body.cursor-hover .custom-cursor-dot { opacity: 0; }
     margin-bottom: 32px;
 }
 .hero-title {
-    font-size: clamp(3.2rem, 9vw, 8.5rem);
+    font-size: clamp(1.8rem, 8.5vw, 8.5rem);
     font-weight: 800;
     text-transform: uppercase;
     line-height: 0.95;
     letter-spacing: -0.02em;
     margin-bottom: 32px;
     perspective: 1000px; /* For 3D character animation */
+    white-space: nowrap;
 }
 .dot-accent { color: var(--accent); }
 .hero-subtitle {
@@ -491,7 +492,7 @@ a.cert-row > * { position: relative; z-index: 1; }
     .nav-menu li a { font-size: 1.2rem; letter-spacing: 0.08em; }
 }
 @media (max-width: 600px) {
-    .hero-title { font-size: clamp(3rem, 16vw, 6rem); }
+    .hero-title { font-size: clamp(1.5rem, 7.5vw, 4rem); }
     .section-title { font-size: clamp(2.2rem, 9vw, 3.5rem); }
     .editorial-section { padding: 60px 20px; }
     .cert-name { font-size: 1.2rem; }
