@@ -163,27 +163,37 @@
                 
                 <!-- Right Scrollable Side -->
                 <div class="section-right">
-                    <div class="skills-intro-text reveal-fade-up">
-                        <p class="paragraph-body">An interactive overview of my technical toolset. Hover over the nodes in the skill constellation below to show details and tool descriptions.</p>
-                    </div>
-
-                    <!-- Constellation Canvas Container -->
-                    <div class="constellation-wrapper reveal-fade-up">
-                        <div class="canvas-container">
-                            <canvas id="skills-canvas"></canvas>
+                    <div class="lab-grid">
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-brands fa-python"></i> Python</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Core language proficiency. Used for logical structuring, data structures solutions, dynamic object scripting, and analysis libraries.</p>
                         </div>
-                        <div class="skill-detail-panel glass-card" id="skill-detail-panel">
-                            <h4 id="skill-name" class="text-accent">Select a Node</h4>
-                            <p id="skill-desc">Hover over any node in the constellation on the left to review descriptions, proficiencies, and libraries.</p>
-                            <div class="skill-meta-tags" id="skill-tags">
-                                <!-- Tags dynamically generated -->
-                            </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-brands fa-java"></i> Java</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Standard object architecture. Learning inheritance loops, polymorphic systems, dynamic compilation, and classes structures.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-solid fa-database"></i> SQL Databases</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Relational data queries. Writing join tables statements, schema tables setups, group queries, and indexes tags.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-solid fa-brain"></i> Machine Learning</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Computational models. Exploring parameters tuning, dataset training splitting, regression boundaries, and classifications models.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-solid fa-chart-line"></i> Data Science</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Dataset analytics. Cleaning data arrays columns, correlating distributions values, and plotting trend metrics in code grids.</p>
+                        </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 15px;"><i class="fa-solid fa-code"></i> C++</h3>
+                            <p style="color: var(--text-muted); font-size: 0.9rem;">Academic programming structure. Experienced with pointer parameters, reference matrices, allocations, and sorting algorithms.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <!-- Section 03: Currently Learning -->
+
+              <!-- Section 03: Currently Learning -->
             <section id="learning" class="editorial-section">
                 <!-- Left Sticky Side -->
                 <div class="section-left">
@@ -274,67 +284,35 @@
                     <div class="skills-intro-text reveal-fade-up" style="margin-bottom: 2rem;">
                         <p class="paragraph-body">While I continue to build my foundation for large-scale Data Science and Machine Learning pipelines, I use this space to study pure computational logic. These interactive models are built from scratch to experiment with vectors, physics, and state management using raw code.</p>
                     </div>
-                    <div class="lab-cards-list">
+                    <div class="lab-grid">
                         
                         <!-- Lab Card 1: Boids -->
-                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-boids">
-                            <div class="lab-canvas-container">
-                                <canvas id="boids-canvas"></canvas>
-                                <div class="canvas-hud">
-                                    <span class="hud-status standby" id="hud-status-boids">STANDBY</span>
-                                    <span class="hud-coordinates">SYS_REF: COLLECTIVE_MOTION</span>
-                                </div>
-                            </div>
-                            <div class="lab-card-details">
-                                <div class="lab-card-num-header">
-                                    <span class="lab-num">01 / COLLECTIVE MOTION</span>
-                                    <h3 class="lab-title">Boids Swarm</h3>
-                                </div>
-                                <p class="paragraph-body-small">Simulating flocking mechanics with alignment, separation, and cohesion vectors. Hover to attract and direct the swarm.</p>
-                            </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 5px;">Boids Swarm</h3>
+                            <span style="font-size: 0.7rem; color: var(--text-muted); display: block; margin-bottom: 15px; letter-spacing: 0.1em;">01 / COLLECTIVE MOTION</span>
+                            <p style="color: var(--primary); font-size: 0.9rem;">Simulating flocking mechanics with alignment, separation, and cohesion vectors.</p>
                         </div>
 
                         <!-- Lab Card 2: Chaos Pendulum -->
-                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-pendulum">
-                            <div class="lab-canvas-container">
-                                <canvas id="pendulum-canvas"></canvas>
-                                <div class="canvas-hud">
-                                    <span class="hud-status standby" id="hud-status-pendulum">STANDBY</span>
-                                    <span class="hud-coordinates">SYS_REF: CHAOTIC_SYSTEMS</span>
-                                </div>
-                            </div>
-                            <div class="lab-card-details">
-                                <div class="lab-card-num-header">
-                                    <span class="lab-num">02 / CHAOTIC SYSTEMS</span>
-                                    <h3 class="lab-title">Double Pendulum</h3>
-                                </div>
-                                <p class="paragraph-body-small">Euler physics tracking chaotic trajectories. Extremely sensitive to start angles, tracing non-repetitive vector loops. Click and drag to release.</p>
-                            </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 5px;">Double Pendulum</h3>
+                            <span style="font-size: 0.7rem; color: var(--text-muted); display: block; margin-bottom: 15px; letter-spacing: 0.1em;">02 / CHAOTIC SYSTEMS</span>
+                            <p style="color: var(--primary); font-size: 0.9rem;">Euler physics tracking chaotic trajectories. Extremely sensitive to start angles, tracing non-repetitive vector loops.</p>
                         </div>
 
                         <!-- Lab Card 3: Flow Field -->
-                        <div class="lab-card glass-card reveal-fade-up" id="lab-card-flow">
-                            <div class="lab-canvas-container">
-                                <canvas id="flow-canvas"></canvas>
-                                <div class="canvas-hud">
-                                    <span class="hud-status standby" id="hud-status-flow">STANDBY</span>
-                                    <span class="hud-coordinates">SYS_REF: VECTOR_DYNAMICS</span>
-                                </div>
-                            </div>
-                            <div class="lab-card-details">
-                                <div class="lab-card-num-header">
-                                    <span class="lab-num">03 / VECTOR DYNAMICS</span>
-                                    <h3 class="lab-title">Flow Field</h3>
-                                </div>
-                                <p class="paragraph-body-small">Drifting particles painting mathematical curves guided by a wave vector grid. Click the canvas to randomize the force vectors.</p>
-                            </div>
+                        <div class="glass-card">
+                            <h3 style="color: var(--accent-glow); margin-bottom: 5px;">Perlin Flow Field</h3>
+                            <span style="font-size: 0.7rem; color: var(--text-muted); display: block; margin-bottom: 15px; letter-spacing: 0.1em;">03 / VECTOR DYNAMICS</span>
+                            <p style="color: var(--primary); font-size: 0.9rem;">Particles steered by a grid of noise-driven angle vectors tracing fluid dynamic patterns.</p>
                         </div>
 
                     </div>
                 </div>
             </section>
 
-            <!-- Section 05: Journey -->
+
+              <!-- Section 05: Journey -->
             <section id="journey" class="editorial-section">
                 <!-- Left Sticky Side -->
                 <div class="section-left">
@@ -629,8 +607,15 @@
         </div>
     </footer>
 
+        <!-- Lenis for Smooth Scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+    <!-- GSAP for Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js?v=2"></script>
 </body>
 </html>
+
+
 
