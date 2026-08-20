@@ -22,51 +22,54 @@ document.addEventListener('DOMContentLoaded', () => {
     /* ─── 2. GSAP REGISTER ─────────────────────────────────── */
     gsap.registerPlugin(ScrollTrigger);
 
-    /* ─── 3. PRELOADER ─────────────────────────────────────── */
-    const preloader = document.getElementById('preloader');
-    const loadingBar = document.getElementById('preloader-loading-bar');
-    const percentText = document.getElementById('preloader-percentage-text');
-
-    let progress = 0;
-    const loadInterval = setInterval(() => {
-        progress += Math.random() * 18 + 4;
-        if (progress >= 100) {
-            progress = 100;
-            clearInterval(loadInterval);
-            loadingBar.style.width = '100%';
-            percentText && (percentText.textContent = '100%');
-
-            setTimeout(() => {
-                preloader.classList.add('done');
-
-                // Big hero title entrance
-                gsap.fromTo('.hero-badge',
-                    { y: 30, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.2 }
-                );
-                // Premium Cinematic Kinetic Typography Reveal
-                gsap.fromTo('.hero-title',
-                    { scale: 0.92 },
-                    { scale: 1, duration: 2.5, ease: 'power3.out', delay: 0.2 }
-                );
-                
-                gsap.fromTo('.hero-title .char',
-                    { y: 80, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 1.6, stagger: 0.04, ease: 'expo.out', delay: 0.2 }
-                );
-                gsap.fromTo('.hero-subtitle',
-                    { y: 40, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.9 }
-                );
-                gsap.fromTo('.scroll-hint',
-                    { y: 20, opacity: 0 },
-                    { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out', delay: 1.3 }
-                );
-            }, 500);
+    
+    /* ─── 3. CINEMATIC INTRO ───────────────────────────────── */
+    const introScreen = document.getElementById('intro-screen');
+    
+    // Scale container smoothly
+    gsap.fromTo('.intro-name',
+        { scale: 0.96 },
+        { scale: 1.0, duration: 1.2, ease: 'power3.out' }
+    );
+    
+    // Letters rise up with slight blur
+    gsap.fromTo('.intro-char',
+        { y: '120%', opacity: 0, filter: 'blur(8px)' },
+        { 
+            y: '0%', opacity: 1, filter: 'blur(0px)', 
+            duration: 1.0, stagger: 0.03, ease: 'power3.out',
+            onComplete: () => {
+                // Hold for a moment, then fade out the whole intro screen
+                gsap.to(introScreen, {
+                    opacity: 0,
+                    duration: 0.8,
+                    delay: 0.5,
+                    ease: 'power2.inOut',
+                    onComplete: () => {
+                        introScreen.style.display = 'none';
+                        
+                        // Fire hero section entrance animations
+                        gsap.fromTo('.hero-badge',
+                            { y: 30, opacity: 0 },
+                            { y: 0, opacity: 1, duration: 1, ease: 'power3.out' }
+                        );
+                        gsap.fromTo('.hero-title',
+                            { scale: 0.96, opacity: 0, filter: 'blur(10px)' },
+                            { scale: 1, opacity: 1, filter: 'blur(0px)', duration: 2, ease: 'power3.out' }
+                        );
+                        gsap.fromTo('.hero-subtitle',
+                            { y: 40, opacity: 0 },
+                            { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.4 }
+                        );
+                        gsap.fromTo('.scroll-hint',
+                            { y: 20, opacity: 0 },
+                            { y: 0, opacity: 1, duration: 0.8, ease: 'power2.out', delay: 0.8 }
+                        );
+                    }
+                });
+            }
         }
-        loadingBar.style.width = progress + '%';
-        if (percentText) percentText.textContent = Math.round(progress) + '%';
-    }, 80);
+    );
 
     /* ─── 4. NAVBAR SCROLL STATE ───────────────────────────── */
     const navbar = document.querySelector('.navbar');

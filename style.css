@@ -66,51 +66,41 @@ body.cursor-hover .custom-cursor-ring {
 }
 body.cursor-hover .custom-cursor-dot { opacity: 0; }
 
-/* ── PRELOADER ─────────────────────────────────── */
-#preloader {
-    position: fixed; inset: 0;
-    background: var(--bg-base);
-    z-index: 10000;
+/* ── INTRO SPLASH SCREEN ────────────────────────── */
+.intro-screen {
+    position: fixed;
+    inset: 0;
+    background: #000000;
+    z-index: 9999;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
 }
-#preloader.done {
-    clip-path: inset(0 0 100% 0);
-    transition: clip-path 1.2s cubic-bezier(0.77, 0, 0.175, 1);
-    pointer-events: none;
+.intro-name {
+    font-family: 'Anton', sans-serif;
+    font-size: clamp(3.5rem, 11vw, 12rem);
+    color: #f4f4f4;
+    text-transform: uppercase;
+    line-height: 0.9;
+    letter-spacing: 0.02em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 0.3em;
+    text-shadow: 0 4px 30px rgba(255, 255, 255, 0.08); /* Subtle soft glow */
 }
-.scroll-hint span {
-    font-size: 0.65rem;
-    letter-spacing: 0.3em;
-    color: var(--text-muted);
+.intro-word {
+    display: flex;
     white-space: nowrap;
-    text-transform: uppercase;
 }
-.preloader-text-header {
-    font-size: 0.85rem;
-    letter-spacing: 0.25em;
-    color: var(--text-muted);
-    text-transform: uppercase;
+.intro-char-wrap {
+    overflow: hidden;
+    display: inline-block;
 }
-.preloader-loading-bar-wrapper {
-    width: 280px; height: 1px;
-    background: rgba(255,255,255,0.08);
-    position: relative;
-}
-#preloader-loading-bar {
-    position: absolute;
-    top: 0; left: 0; height: 100%;
-    background: var(--accent);
-    width: 0;
-    transition: width 0.15s ease;
-}
-#preloader-percentage-text {
-    font-size: 0.8rem;
-    color: var(--accent);
-    letter-spacing: 0.1em;
+.intro-char {
+    display: inline-block;
+    will-change: transform, opacity;
 }
 
 /* ── NAVIGATION ────────────────────────────────── */
@@ -424,6 +414,13 @@ a.cert-row > * { position: relative; z-index: 1; }
 }
 
 /* ── HELPERS ───────────────────────────────────── */
+.scroll-hint span {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--text-muted);
+    white-space: nowrap;
+    text-transform: uppercase;
+}
 .divider-line {
     height: 1px;
     background: var(--accent);
