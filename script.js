@@ -1260,3 +1260,38 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+/* --- PREMIUM UI ENHANCEMENTS (JS) --- */
+document.addEventListener('DOMContentLoaded', () => {
+    // Typing effect for subtitle
+    const subtitleEl = document.querySelector('.hero-subtitle');
+    if(subtitleEl) {
+        const text = subtitleEl.innerText;
+        subtitleEl.innerText = '';
+        // Create blinking cursor element
+        const cursor = document.createElement('span');
+        cursor.innerHTML = '&#9608;';
+        cursor.style.color = 'var(--accent-color)';
+        cursor.style.animation = 'blink 1s step-start infinite';
+        
+        let i = 0;
+        const typeWriter = () => {
+            if(i < text.length) {
+                subtitleEl.innerHTML = text.substring(0, i+1);
+                subtitleEl.appendChild(cursor);
+                i++;
+                setTimeout(typeWriter, 40 + Math.random() * 50);
+            } else {
+                // Done typing, keep cursor blinking
+            }
+        }
+        
+        // Add blink animation to document
+        const style = document.createElement('style');
+        style.innerHTML = '@keyframes blink { 50% { opacity: 0; } }';
+        document.head.appendChild(style);
+
+        // Start typing after preloader (approx 3s)
+        setTimeout(typeWriter, 2800); 
+    }
+});
