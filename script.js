@@ -130,8 +130,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const heroSection = document.getElementById('hero');
     const neuralCanvas = document.getElementById('neural-canvas');
-    if (neuralCanvas) {
-        const ctxNeural = neuralCanvas.getContext('2d');
+    const ctxNeural = neuralCanvas.getContext('2d');
     
     let heroWidth = neuralCanvas.width = heroSection.offsetWidth * dpr;
     let heroHeight = neuralCanvas.height = heroSection.offsetHeight * dpr;
@@ -1298,4 +1297,5 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 2800); 
     }
 });
+
 
