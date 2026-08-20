@@ -63,10 +63,23 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 80);
 
     /* ─── 4. NAVBAR SCROLL STATE ───────────────────────────── */
-    const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        navbar && navbar.classList.toggle('scrolled', window.scrollY > 80);
+    const navbar = document.querySelector('.navbar');
+    lenis.on('scroll', ({ scroll }) => {
+        navbar && navbar.classList.toggle('scrolled', scroll > 80);
     });
+
+    /* ─── 4b. MOBILE NAV TOGGLE ────────────────────────────── */
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('open');
+        });
+        // Close on link click
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => navMenu.classList.remove('open'));
+        });
+    }
 
     /* ─── 5. GSAP SCROLL ANIMATIONS ───────────────────────── */
 
