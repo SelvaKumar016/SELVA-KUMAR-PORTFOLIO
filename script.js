@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    Selva Kumar R - Luxury Editorial Script Engine
    ========================================================================== */
 
@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const cursorDot = document.getElementById('cursor-dot');
     const cursorRing = document.getElementById('cursor-ring');
-    const glowAura = document.getElementById('glow-aura');
+    const glowAura = document.getElementById('glow-aura'); // Removed in HTML
     
     let mouseX = window.innerWidth / 2;
     let mouseY = window.innerHeight / 2;
@@ -57,8 +57,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             auraX += (mouseX - auraX) * easeAura;
             auraY += (mouseY - auraY) * easeAura;
-            glowAura.style.left = `${auraX - 225}px`;
-            glowAura.style.top = `${auraY - 225}px`;
+            if(glowAura) {
+                glowAura.style.left = `${auraX - 225}px`;
+                glowAura.style.top = `${auraY - 225}px`;
+            }
 
             requestAnimationFrame(updatePhysicsCursor);
         };
@@ -128,7 +130,8 @@ document.addEventListener('DOMContentLoaded', () => {
        ========================================================================== */
     const heroSection = document.getElementById('hero');
     const neuralCanvas = document.getElementById('neural-canvas');
-    const ctxNeural = neuralCanvas.getContext('2d');
+    if (neuralCanvas) {
+        const ctxNeural = neuralCanvas.getContext('2d');
     
     let heroWidth = neuralCanvas.width = heroSection.offsetWidth * dpr;
     let heroHeight = neuralCanvas.height = heroSection.offsetHeight * dpr;
@@ -1236,7 +1239,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const cx   = rect.left + rect.width  / 2;
             const cy   = rect.top  + rect.height / 2;
 
-            // Normalise -1 → +1
+            // Normalise -1 â†’ +1
             const normX = (e.clientX - cx) / (rect.width  / 2);
             const normY = (e.clientY - cy) / (rect.height / 2);
 
@@ -1295,3 +1298,4 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(typeWriter, 2800); 
     }
 });
+
