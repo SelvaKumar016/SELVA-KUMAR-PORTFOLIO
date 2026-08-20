@@ -142,6 +142,17 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Generic elements fade up
+    gsap.utils.toArray('.reveal-fade-up').forEach((el, i) => {
+        gsap.fromTo(el,
+            { y: 50, opacity: 0 },
+            {
+                y: 0, opacity: 1, duration: 1.2, ease: 'power3.out',
+                scrollTrigger: { trigger: el, start: 'top 92%' }
+            }
+        );
+    });
+
     /* ─── 6. CUSTOM CURSOR ─────────────────────────────────── */
     const cursorDot = document.getElementById('cursor-dot');
     const cursorRing = document.getElementById('cursor-ring');
