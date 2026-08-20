@@ -212,6 +212,7 @@ body.cursor-hover .custom-cursor-dot { opacity: 0; }
     margin-bottom: 32px;
     perspective: 1000px; /* For 3D character animation */
     white-space: nowrap;
+    text-shadow: 0 10px 40px rgba(255, 255, 255, 0.15); /* Cinematic subtle glow */
 }
 .dot-accent { color: var(--accent); }
 .hero-subtitle {

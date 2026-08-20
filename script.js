@@ -44,10 +44,15 @@ document.addEventListener('DOMContentLoaded', () => {
                     { y: 30, opacity: 0 },
                     { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.2 }
                 );
-                // Staggered 3D character flip entrance
+                // Premium Cinematic Kinetic Typography Reveal
+                gsap.fromTo('.hero-title',
+                    { scale: 0.92 },
+                    { scale: 1, duration: 2.5, ease: 'power3.out', delay: 0.2 }
+                );
+                
                 gsap.fromTo('.hero-title .char',
-                    { y: 120, opacity: 0, rotateX: -90, transformOrigin: "50% 100% -50" },
-                    { y: 0, opacity: 1, rotateX: 0, duration: 1.2, stagger: 0.05, ease: 'back.out(1.7)', delay: 0.2 }
+                    { y: 80, opacity: 0 },
+                    { y: 0, opacity: 1, duration: 1.6, stagger: 0.04, ease: 'expo.out', delay: 0.2 }
                 );
                 gsap.fromTo('.hero-subtitle',
                     { y: 40, opacity: 0 },
