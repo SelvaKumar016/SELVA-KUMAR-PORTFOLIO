@@ -197,13 +197,13 @@ body.cursor-hover .custom-cursor-dot { opacity: 0; }
     margin-bottom: 32px;
 }
 .hero-title {
-    font-size: clamp(4.5rem, 12vw, 13rem);
+    font-size: clamp(3.5rem, 9vw, 8.5rem);
     font-weight: 800;
     text-transform: uppercase;
-    line-height: 0.88;
-    letter-spacing: -0.04em;
+    line-height: 0.95;
+    letter-spacing: -0.02em;
     margin-bottom: 32px;
-    overflow: hidden;
+    perspective: 1000px; /* For 3D character animation */
 }
 .dot-accent { color: var(--accent); }
 .hero-subtitle {

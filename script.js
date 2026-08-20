@@ -44,9 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     { y: 30, opacity: 0 },
                     { y: 0, opacity: 1, duration: 1, ease: 'power3.out', delay: 0.2 }
                 );
-                gsap.fromTo('.hero-title',
-                    { y: '120%', opacity: 0 },
-                    { y: '0%', opacity: 1, duration: 1.4, ease: 'power4.out', delay: 0.4 }
+                // Staggered 3D character flip entrance
+                gsap.fromTo('.hero-title .char',
+                    { y: 120, opacity: 0, rotateX: -90, transformOrigin: "50% 100% -50" },
+                    { y: 0, opacity: 1, rotateX: 0, duration: 1.2, stagger: 0.05, ease: 'back.out(1.7)', delay: 0.2 }
                 );
                 gsap.fromTo('.hero-subtitle',
                     { y: 40, opacity: 0 },
